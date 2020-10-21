@@ -11,6 +11,10 @@ app.use(cors());
 app.options('*', cors());
 app.use(bodyParser.json());
 
+app.get('/locations', (req, res) => {
+    res.send(data)
+})
+
 app.get('/location/:name', (req, res) => {
     res.send(data)
 })
@@ -31,11 +35,11 @@ app.post('location', (req, res) => {
         categories,
         permit
     }
-    res.json({
+    res.json([
         data.locations,
         newLocation
-    })
+    ])
     data.locations.push(newLocations);
-}
+})
 
 app.listen(port, () => console.log(`We're live on port, ${port}`))
