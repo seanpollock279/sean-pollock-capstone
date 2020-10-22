@@ -9,13 +9,16 @@ class MapPage extends React.Component {
     }
 
     componentDidMount() {
-        axios.get('http://localhost:8080/locations')
+        axios.get('/locations')
             .then(res => {
                 this.setState({
                     locations: res.data
                 })
             })
     }
+
+    // for more info clicked through from a specific card it will change dynamic url to /locations/:id 
+
 
     render() {
         let locations = this.state.locations;
@@ -28,6 +31,7 @@ class MapPage extends React.Component {
                     <LocationCard 
                     location={location.location}
                     description={location.description}
+                    img={location.img}
                     />
                 )}
             </>

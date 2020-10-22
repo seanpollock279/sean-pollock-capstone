@@ -13,7 +13,8 @@
         "latitude": -79.457981,
         "categories" : ["portraits", "lifestyle", "wedding", "engagements"],
         "permit": true,
-        "washrooms": true
+        "washrooms": true,
+        "img": "https://i.imgur.com/j0t7nrS.jpg"
     },
     {
         "id": "",
@@ -28,7 +29,8 @@
         "latitude": -79.464570,
         "categories": ["portraits", "wedding", "lifestyle", "engagements"],
         "permit": true,
-        "washrooms": true
+        "washrooms": true,
+        "img": "https://i.imgur.com/qQcKsSU.jpg"
     },
     {
         "id": "",
@@ -43,7 +45,8 @@
         "latitude": 79.40815,
         "categories": ["weddings", "portraits", "engagements", "lifestyle"],
         "permit": true,
-        "washrooms": false
+        "washrooms": false,
+        "img": "https://i.imgur.com/f4rXsgC.jpg"
     },
     {
         "id": "",
@@ -88,6 +91,7 @@
         "latitude": -79.307878,
         "categories": ["portraits", "lifestyle", "wedding", "engagement"],
         "permit": false,
-        "washrooms": true
+        "washrooms": true,
+        "img": "https://i.imgur.com/gAskt9c.jpg"
     }]
 }

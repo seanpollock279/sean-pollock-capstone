@@ -1,0 +1,58 @@
+@import '../../Styles/global.scss';
+
+.background {
+    background-color: $light;
+}
+
+.locationCard {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    margin: 3vh auto;
+
+    &__top {
+        height: 20vh;
+        object-fit: cover;
+        // background-color: red;
+        border-radius: 5px 5px 0 0;
+    }
+
+    &__img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    &__bottom {
+        height: 25vh;
+        background-color: $gray;
+        border-radius: 0 0 5px 5px;
+    }
+
+    &__title {
+        font-family: "Inter";
+        font-weight: 400;
+        font-size: 1.25rem;
+        padding-left: 5vw;
+    }
+
+    &__text {
+        font-family: "Inter";
+        font-weight: 300;
+        font-size: 0.75rem;
+        padding-left: 5vw;
+        color: $dark;
+    }
+
+    &__btn {
+        font-family: 'Inter';
+        font-weight: 300;
+        height: 8vw;
+        width: 30vw;
+        border-radius: 5px;
+        background-color: $main;
+        border: 1px solid $main;
+        color: $dark;
+        margin-bottom: 3vh;
+        margin-left: 5vw;
+    }
+}

@@ -1,0 +1,89 @@
+@import '../../Styles/global.scss';
+
+.landing {
+    background-color: $main;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__logo {
+        width: 85%;
+    }
+
+    &__middleContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__description {
+        font-family: "Inter";
+        font-weight: 300;
+        font-size: 0.75rem;
+        padding-left: 5vw;
+        color: $dark;
+    }
+
+    &__search {
+        width: 50%;
+        margin: 2vh auto;
+        border-radius: 5px;
+        border: 1px solid $medium;
+        height: 3vh;
+    }
+
+    &__searchBtn {
+        font-family: 'Inter';
+        font-weight: 300;
+        height: 8vw;
+        width: 40vw;
+        border-radius: 5px;
+        background-color: $gray;
+        border: 1px solid $medium;
+        color: $dark;
+        margin-bottom: 3vh;
+    }
+
+    &__bottomContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__quickMenu {
+        font-family: "Inter";
+        color: $dark;
+        font-weight: 400;
+        font-size: 1.5rem;
+    }
+
+    &__optionBtn {
+        font-family: 'Inter';
+        font-weight: 300;
+        height: 8vw;
+        width: 40vw;
+        border-radius: 5px;
+        background-color: $light;
+        border: 1px solid $gray;
+        color: $dark;
+        margin-bottom: 3vh;
+    }  
+
+    &__optionBtn:hover {
+        font-family: 'Inter';
+        font-weight: 300;
+        height: 8vw;
+        width: 40vw;
+        border-radius: 5px;
+        background-color: $dark;
+        border: 1px solid $dark;
+        color: $light;
+        margin-bottom: 3vh;
+    }
+}
+
+.foot {
+    background-color: $main;
+    min-height: 50vw;
+}

@@ -1,0 +1,38 @@
+@import '../../Styles/global.scss';
+
+.header {
+    background-color: $main;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__logo {
+        width: 85%;
+    }
+
+    &__navItem {
+        font-family: 'Inter';
+        font-weight: 300;
+        list-style: none;
+        text-align: center;
+        margin: 0 0 2vh 0;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $dark;
+    }
+
+    &__addBtn {
+        font-family: 'Inter';
+        font-weight: 300;
+        height: 8vw;
+        width: 40vw;
+        border-radius: 5px;
+        background-color: $gray;
+        border: 1px solid $gray;
+        color: $medium;
+        margin-bottom: 3vh;
+    }
+}
