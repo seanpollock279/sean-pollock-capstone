@@ -36,10 +36,10 @@ app.post('location', (req, res) => {
         permit
     }
     res.json([
-        data.locations,
+        db.locations,
         newLocation
     ])
-    data.locations.push(newLocations);
+    db.locations.push(newLocations);
 })
 
 app.listen(port, () => console.log(`We're live on port, ${port}`))
