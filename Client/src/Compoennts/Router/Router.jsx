@@ -11,10 +11,10 @@ function Router (props) {
         <BrowserRouter>
             <Switch>
                 <Route exact path="/" render={() => <LandingPage/> }/>
-                <Route path="/locations" render={() => <MapPage state={props.state} /> }/>
+                <Route exact path="/locations" render={() => <MapPage state={props.state} /> }/>
                 <Route path="/about" render={() => <About /> }/>
-                <Route path="/upload" render={() => <Uploader /> }/>
-                <Route path="/locations/:id" render={() => <Location /> } />
+                <Route path="/upload" render={() => <Uploader addLocation={props.addLocation} onChange={props.onChange} newLocation={props.state.newLocation}/> }/>
+                <Route path="/locations/:id" render={(props) => <Location {...props}/> } />
             </Switch>
         </BrowserRouter>
     )

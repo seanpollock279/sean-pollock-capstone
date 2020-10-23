@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import axios from 'axios';
 import Router from './Compoennts/Router/Router';
+import {useHistory} from 'react-router-dom';
 
 class App extends React.Component {
   state = {
@@ -11,7 +12,7 @@ class App extends React.Component {
     }
   }
 
-componentDidMount() {
+ componentDidMount() {
     axios.get('/locations')
         .then(res => {
             this.setState({
@@ -19,12 +20,48 @@ componentDidMount() {
             })
         })
   }
+
+  onChange = (e) => {
+    this.setState({newLocation: {...this.state.newLocation, [e.target.name]: e.target.value}})
+  }
+
+  addLocation = () => {
+    console.log("fired");
+    let newLocation = {
+      location: this.state.newLocation.title,
+      description: this.state.newLocation.description,
+      address: this.state.newLocation.address,
+      city: this.state.newLocation.city,
+      region: this.state.newLocation.region,
+      img: this.state.newLocation.img
+    }
+    axios.post('/locations', newLocation)
+    .then(res => {
+      this.setState({locations: res.data.locations})
+      this.props.history.push('/locations')
+      window.location.reload();
+    })
+    console.log(newLocation)
+  }
+
+  updateState = () => {
+    axios.get('/locations')
+        .then(res => {
+            this.setState({
+                locations: res.data
+            })
+        })
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    this.updateState();
+  }
+
   render() {
-    
     
     return (
       <>{this.state.locations.locations !== undefined && 
-        <Router state={this.state} props={this.props} />
+        <Router state={this.state} addProps={this.props} addLocation={this.addLocation} onChange={this.onChange} />
       }</>
     )
   }

@@ -11,7 +11,6 @@ class Location extends React.Component {
         const locationId = this.props.match.params.id;
         axios.get('/locations/' + locationId)
             .then(res => {
-                console.log(res)
                 this.setState({
                     location : res.data
                 })
