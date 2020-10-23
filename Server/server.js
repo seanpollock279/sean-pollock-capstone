@@ -15,8 +15,13 @@ app.get('/locations', (req, res) => {
     res.send(data)
 })
 
-app.get('/location/:name', (req, res) => {
-    res.send(data)
+app.get('/locations/:id', (req, res) => {
+    const selected = data.find(item => item.id === req.params.id)
+    res.json({
+        location: selected.location,
+        id: selected.id,
+        description: selected.description
+    })
 })
 
 app.post('location', (req, res) => {
@@ -36,10 +41,10 @@ app.post('location', (req, res) => {
         permit
     }
     res.json([
-        db.locations,
+        data.locations,
         newLocation
     ])
-    db.locations.push(newLocations);
+    data.locations.push(newLocations);
 })
 
 app.listen(port, () => console.log(`We're live on port, ${port}`))

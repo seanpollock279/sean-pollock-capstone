@@ -1,7 +1,7 @@
 {
     "locations" : [
         {
-        "id": "",
+        "id": "1b3b5b7bhg3",
         "location": "SunnySide Boardwalk",
         "description": "A short boardwalk along the lake that is lined by beach one side and grass ont the other. Large trees line the pathway as well",
         "morning light": true,
@@ -17,7 +17,7 @@
         "img": "https://i.imgur.com/j0t7nrS.jpg"
     },
     {
-        "id": "",
+        "id": "9g7f8d6a5ajd6",
         "location": "High Park",
         "description": "Large park on the west side of Toronto. This park has ponds, forests, cottages, gardens and open grass space.",
         "morningLight": true,
@@ -33,7 +33,7 @@
         "img": "https://i.imgur.com/qQcKsSU.jpg"
     },
     {
-        "id": "",
+        "id": "7dgdga5a22",
         "location": "Spadina House",
         "description": "Historic House and lavish gardens, lots of large trees, the house can be used as a backgrop with many varying walls. Small orchard out back.",
         "morning light": true,
@@ -49,7 +49,7 @@
         "img": "https://i.imgur.com/f4rXsgC.jpg"
     },
     {
-        "id": "",
+        "id": "22klsoeodk",
         "location": "Yorkville Camera Wall",
         "description": "Outside wall of a building that is covered in security cameras.",
         "morning light": true,
@@ -61,10 +61,11 @@
         "latitude": -79.390262,
         "categories": ["portraits", "lifestyle"],
         "permit": false,
-        "washrooms": true
+        "washrooms": true,
+        "img":"https://i.imgur.com/kT0S45y.jpg"
     },
     {
-        "id": "",
+        "id": "ls456d7dsww2",
         "location": "Sugar Beach",
         "description": "Artificial beach with pink umbrellas and white beach chairs. A good view of the lake as well.",
         "morning light": true,
@@ -76,10 +77,11 @@
         "latitude": -79.367674,
         "categories": ["portraits", "lifestyle"],
         "permit": false,
-        "washrooms": true
+        "washrooms": true,
+        "img": "https://i.imgur.com/80Pf568.jpg"
     },
     {
-        "id": "",
+        "id": "394049sdzkjahs",
         "location": "Woodbine Beach",
         "description": "Very large beach with access to the water.",
         "morning light": true,

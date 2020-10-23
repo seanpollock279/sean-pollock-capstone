@@ -1,0 +1,49 @@
+@import '../../Styles/global.scss';
+
+.aboutInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__profile {
+        max-width: 85%;
+        border-radius: 5px;
+        border: 1px;
+        margin-top: 4vh;
+    }
+
+    &__title {
+        font-family: 'Inter';
+        font-weight: 400;
+        color: $dark;
+        font-size: 1.5rem;
+        margin-top: 2vh 0 2vh 0;
+    }
+
+    &__description {
+        font-family: 'Inter';
+        font-weight: 300;
+        color: $dark;
+        font-size: 0.75rem;
+        width: 80%;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    &__subTitle {
+        font-family: 'Inter';
+        text-align: center;
+        color: $dark;
+        font-size: 1.25rem;
+        font-weight: 400;
+    }
+
+    &__tools {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    &__tool {
+        max-width: 20%;
+    }
+}

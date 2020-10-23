@@ -1,0 +1,82 @@
+@import '../../Styles/global.scss';
+
+.uploader {
+
+    &__title {
+        font-family: "Inter";
+        font-size: 1.25rem;
+        color: $dark;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    &__label {
+        font-family: "Inter";
+        font-size: 0.75rem;
+        text-align: center;
+        font-weight: 400;
+        color: $dark;
+        margin: 1vh 0 1vh 0;
+    }
+
+    &__input {
+        width: 60%;
+        margin: 0 auto;
+        border: 2px solid $main;
+        border-radius: 5px;
+        height: 3vh;
+    }
+
+    &__inputTwo {
+        width: 60%;
+        margin: 0 auto;
+        border: 2px solid $main;
+        border-radius: 5px;
+        height: 15vh;
+    }
+
+    &__subLabel {
+        font-family: "Inter";
+        font-size: 0.75rem;
+        font-weight: 300;
+        width: 30%;
+    }
+
+    &__checkGroup {
+        flex-wrap: wrap;
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-around;
+    }
+
+    &__check {
+        display: flex;
+        align-items: center;
+        width: 30%;
+        margin: 0 auto;
+    }
+
+    &__btn {
+        font-family: 'Inter';
+        font-weight: 700;
+        height: 10vw;
+        width: 40vw;
+        border-radius: 5px;
+        background-color: $main;
+        border: 1px solid $main;
+        color: $gray;
+        margin: 2vh auto;
+    }
+
+    &__foot {
+        margin-top: 5vh;
+        height: 10vh;
+    }
+}

@@ -1,22 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
-import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import './App.css';
-import Home from './Compoennts/Home/Home';
-import MapPage from './Compoennts/MapPage/MapPage';
-import LandingPage from './Compoennts/LandingPage/LandingPage';
+import axios from 'axios';
+import Router from './Compoennts/Router/Router';
 
-function App() {
-  return (
-    <BrowserRouter>
-      <Switch>
-        <Route exact path="/" render={() => <LandingPage/> }/>
-        <Route path="/locations" render={() => <MapPage /> }/>
-        <Route />
-      </Switch>
-    </BrowserRouter>
+class App extends React.Component {
+  state = {
+    locations: [],
+    newLocation: {
+
+    }
+  }
+
+componentDidMount() {
+    axios.get('/locations')
+        .then(res => {
+            this.setState({
+                locations: res.data
+            })
+        })
+  }
+  render() {
     
-  );
+    
+    return (
+      <>{this.state.locations.locations !== undefined && 
+        <Router state={this.state} props={this.props} />
+      }</>
+    )
+  }
 }
 
 export default App;
