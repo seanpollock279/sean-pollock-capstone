@@ -1,0 +1,98 @@
+@import '../../Styles/global.scss';
+
+.location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__img {
+        width: 85%;
+        margin-top: 2vh;
+        border-radius: 5px 5px 0 0;
+    }
+
+    &__containerTop {
+        background-color: $gray;
+        width: 85%;
+    }
+
+    &__title {
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 1.25rem;
+        color: $dark;
+        text-align: left;
+        margin-bottom: 0;
+        margin-left: 3vw;
+    }
+
+    &__description {
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 0.75rem;
+        color: $dark;
+        width: 85%;
+        margin-top: 1vh;
+        margin-left: 3vw;
+    }
+
+    &__address {
+        font-family: 'Inter';
+        font-weight: 700;
+        font-size: 0.75rem;
+        color: $dark;
+        width: 85%;
+        margin-left: 3vw;
+        margin-top: 1vh;
+    }
+
+    &__hr {
+        color: $dark;
+        width: 91%;
+        margin-right: 5%;
+        margin-top: 3vh;
+        background-color: $dark;
+    }
+
+    &__containerBottom {
+        background-color: $gray;
+        width: 85%;
+        border-radius: 0 0 5px 5px;
+        margin-bottom: 3vh;
+        padding-bottom: 3vh;
+    }
+
+    &__category {
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 0.75rem;
+        color: $dark;
+        text-align: left;
+        margin-bottom: 0;
+        margin-left: 3vw;
+    }
+
+    &__label {
+        display: flex;
+        align-items: center;
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 0.75rem;
+        color: $dark;
+        text-align: left;
+        margin-bottom: 0;
+        margin-left: 3vw;
+    }
+
+    &__back {
+        font-family: 'Inter';
+        font-weight: 300;
+        height: 8vw;
+        width: 40vw;
+        border-radius: 5px;
+        background-color: $main;
+        border: 1px solid $main;
+        color: $gray;
+        margin-bottom: 3vh;
+    }
+}

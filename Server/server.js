@@ -21,7 +21,18 @@ app.get('/locations/:id', (req, res) => {
     res.json({
         location: selected.location,
         id: selected.id,
-        description: selected.description
+        description: selected.description,
+        morningLight: selected.morningLight,
+        eveningLight: selected.eveningLight,
+        address: selected.address,
+        city: selected.city,
+        region: selected.region,
+        longtitude: selected.longitude,
+        latitude: selected.latitude,
+        categories: selected.categories,
+        permit: selected.permit,
+        washrooms: selected.washrooms,
+        img: selected.img
     })
 })
 
