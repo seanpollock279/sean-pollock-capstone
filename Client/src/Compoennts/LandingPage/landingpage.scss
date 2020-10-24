@@ -9,6 +9,10 @@
 
     &__logo {
         width: 85%;
+
+        @include tablet {
+            width: 60%;
+        }
     }
 
     &__middleContainer {
@@ -23,6 +27,14 @@
         font-size: 0.75rem;
         padding-left: 5vw;
         color: $dark;
+
+        @include tablet {
+            font-size: 1.25rem;
+            width: 55%;
+            text-align: center;
+            padding-left: 0;
+            margin-top: 0;
+        }
     }
 
     &__search {
@@ -31,6 +43,10 @@
         border-radius: 5px;
         border: 1px solid $medium;
         height: 3vh;
+        
+        @include tablet {
+            height: 4vh;
+        }
     }
 
     &__searchBtn {
@@ -43,6 +59,12 @@
         border: 1px solid $medium;
         color: $dark;
         margin-bottom: 3vh;
+
+        @include tablet {
+            width: 30vw;
+            height: 5vw;
+            font-size: 1rem;
+        }
     }
 
     &__bottomContainer {
@@ -64,10 +86,16 @@
         height: 8vw;
         width: 40vw;
         border-radius: 5px;
-        background-color: $light;
+        background-color: $gray;
         border: 1px solid $gray;
         color: $dark;
         margin-bottom: 3vh;
+
+        @include tablet {
+            width: 30vw;
+            height: 5vw;
+            font-size: 1.25rem;
+        }
     }  
 
     &__optionBtn:hover {
@@ -86,4 +114,8 @@
 .foot {
     background-color: $main;
     min-height: 50vw;
+
+    @include tablet {
+        min-height: 30vw;
+    }
 }

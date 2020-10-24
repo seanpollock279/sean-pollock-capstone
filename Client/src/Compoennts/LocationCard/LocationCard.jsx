@@ -5,7 +5,6 @@ import {Link} from 'react-router-dom';
 
 function LocationCard (props) {
     return (
-        <div className="background">
             <div className="locationCard">
                     <img className="locationCard__img" src={props.img} alt=""/>
                 <div className="locationCard__bottom">
@@ -14,7 +13,6 @@ function LocationCard (props) {
                     <Link to={`/locations/${props.id}`}><button className="locationCard__btn">Learn More</button></Link>
                 </div>
             </div>
-        </div>
     )
 }
 

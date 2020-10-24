@@ -2,20 +2,23 @@ import React from 'react';
 import LocationCard from '../LocationCard/LocationCard';
 import Header from '../Header/Header';
 import axios from 'axios';
+import './mapPage.scss';
 
 function MapPage (props) {
     let location = props.state.locations.locations;
     return (
         <>
             <Header />
-            {location.map(location => 
-                <LocationCard 
-                location={location.location}
-                description={location.description}
-                img={location.img}
-                id={location.id}
-                />
-            )}
+            <div className="Cards">
+                {location.map(location => 
+                    <LocationCard 
+                    location={location.location}
+                    description={location.description}
+                    img={location.img}
+                    id={location.id}
+                    />
+                )}
+            </div>
         </>
     )
 }

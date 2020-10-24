@@ -10,6 +10,11 @@
     flex-direction: column;
     margin: 3vh auto;
 
+    @include tablet {
+        width: 40%;
+        margin: 2vh 1vh 0 2vh;
+    }
+
     &__top {
         height: 50vh;
         object-fit: contain;
@@ -27,6 +32,10 @@
         height: 25vh;
         background-color: $gray;
         border-radius: 0 0 5px 5px;
+
+        @include tablet {
+            height: 20vh;
+        }
     }
 
     &__title {
@@ -34,6 +43,10 @@
         font-weight: 400;
         font-size: 1.25rem;
         padding-left: 5vw;
+
+        @include tablet {
+            padding-left: 3vw;
+        }
     }
 
     &__text {
@@ -42,6 +55,11 @@
         font-size: 0.75rem;
         padding-left: 5vw;
         color: $dark;
+
+        @include tablet {
+            padding-left: 3vw;
+            font-size: 0.85rem;
+        }
     }
 
     &__btn {
@@ -55,5 +73,13 @@
         color: $dark;
         margin-bottom: 3vh;
         margin-left: 5vw;
+
+        @include tablet {
+            height: 4vh;
+            width: 20vw;
+            margin-left: 9vw;
+            margin-top: 1vh;
+            margin-bottom: 1vh;
+        }
     }
 }

@@ -7,8 +7,36 @@
     justify-content: center;
     align-items: center;
 
+    @include tablet {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
     &__logo {
         width: 85%;
+
+        @include tablet {
+            width: 15%;
+            margin-left: 4vw;
+        }
+    }
+
+    &__rightContainer {
+
+        @include tablet {
+            width: 50vw;
+        }
+        
+    }
+
+    &__nav {
+
+        @include tablet {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-right: 4vw;
+        }
     }
 
     &__navItem {
@@ -17,6 +45,10 @@
         list-style: none;
         text-align: center;
         margin: 0 0 2vh 0;
+
+        @include tablet {
+            margin: 0;
+        }
     }
 
     &__link {
@@ -34,5 +66,12 @@
         border: 1px solid $gray;
         color: $medium;
         margin-bottom: 3vh;
+
+        @include tablet {
+            width: 18vw;
+            height: 4vh;
+            font-size: 1rem;
+            margin: 0;
+        }
     }
 }

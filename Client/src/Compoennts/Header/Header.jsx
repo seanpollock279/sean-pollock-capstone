@@ -11,8 +11,8 @@ function Header () {
                 <nav className="header__nav">
                 <Link className="header__link" to="/"><li className="header__navItem">Home</li></Link>
                 <Link className="header__link" to="/about"><li className="header__navItem">About</li></Link>
-                </nav>
                 <Link className="header__link" to="/upload"><button className="header__addBtn">Add Location</button></Link>
+                </nav>
             </div>
         </div>
     )
