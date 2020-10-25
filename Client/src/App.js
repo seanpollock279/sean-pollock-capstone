@@ -3,6 +3,7 @@ import './App.css';
 import axios from 'axios';
 import Router from './Compoennts/Router/Router';
 import {useHistory} from 'react-router-dom';
+import { v4 as uuidv4 } from 'uuid';
 
 class App extends React.Component {
   state = {
@@ -28,12 +29,15 @@ class App extends React.Component {
   addLocation = () => {
     console.log("fired");
     let newLocation = {
-      location: this.state.newLocation.title,
+      location: this.state.newLocation.location,
       description: this.state.newLocation.description,
       address: this.state.newLocation.address,
       city: this.state.newLocation.city,
       region: this.state.newLocation.region,
-      img: this.state.newLocation.img
+      img: this.state.newLocation.img,
+      permit: this.state.newLocation.permit,
+      morningLight: this.state.newLocation.morningLight,
+      id: uuidv4()
     }
     axios.post('/locations', newLocation)
     .then(res => {

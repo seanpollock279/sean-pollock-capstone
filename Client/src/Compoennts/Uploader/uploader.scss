@@ -8,6 +8,10 @@
         color: $dark;
         font-weight: 400;
         text-align: center;
+
+        @include tablet {
+            font-size: 1.75rem;
+        }
     }
 
     &__form {
@@ -24,6 +28,10 @@
         font-weight: 400;
         color: $dark;
         margin: 1vh 0 1vh 0;
+
+        @include tablet {
+            font-size: 1rem;
+        }
     }
 
     &__input {
@@ -47,6 +55,10 @@
         font-size: 0.75rem;
         font-weight: 300;
         width: 30%;
+
+        @include tablet {
+            font-size: 1rem;
+        }
     }
 
     &__checkGroup {
@@ -73,10 +85,39 @@
         border: 1px solid $main;
         color: $gray;
         margin: 2vh auto;
+
+        @include tablet {
+            height: 5vh;
+            width: 25vw;
+        }
     }
 
     &__foot {
         margin-top: 5vh;
         height: 10vh;
     }
+}
+
+.lightCheck {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8vw;
+    width: 85%;
+
+    @include tablet {
+        width: 50%;
+        margin-left: 25vw;
+
+    }
+}
+
+.catContainer {
+
+    @include tablet {
+        display: flex;
+        width: 60%;
+        margin: 0 auto;
+    }
+    
 }

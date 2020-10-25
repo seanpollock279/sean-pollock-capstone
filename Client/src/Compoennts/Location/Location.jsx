@@ -4,7 +4,7 @@ import axios from 'axios';
 import './location.scss';
 import Permit from '../Permit/Permit';
 import Washrooms from '../Washrooms/Washrooms';
-import Categories from '../Categories/Categories';
+// import Categories from '../Categories/Categories';
 import Light from '../Light/Light';
 import {Link} from 'react-router-dom';
 
@@ -43,7 +43,7 @@ class Location extends React.Component {
                     </div>
                     <div className="location__containerBottom">
                         <h4 className="location__category">Categories</h4>
-                            {/* <p>{location.categories}, </p> */}
+                        {/* // categories */}
                         <h4 className="location__label">Permit: <Permit permit={location.permit} /></h4>
                         <h4 className="location__label">Washrooms: <Washrooms washrooms={location.washrooms} /></h4>
                         <h4 className="location__label">Morning light: <Light morningLight={location.morningLight} eveningLight={location.eveningLight} /></h4>
