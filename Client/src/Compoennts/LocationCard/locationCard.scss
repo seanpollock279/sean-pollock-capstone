@@ -29,12 +29,12 @@
     }
 
     &__bottom {
-        height: 25vh;
+        // height: 25vh;
         background-color: $gray;
         border-radius: 0 0 5px 5px;
 
         @include tablet {
-            height: 20vh;
+            // height: 20vh;
         }
     }
 
@@ -79,7 +79,7 @@
             width: 20vw;
             margin-left: 9vw;
             margin-top: 1vh;
-            margin-bottom: 1vh;
+            margin-bottom: 4vh;
         }
     }
 }
