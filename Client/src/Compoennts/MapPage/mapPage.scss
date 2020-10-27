@@ -11,11 +11,19 @@
         justify-content: flex-start;
         margin-right: 0;
         align-items: center;
-        height: 175vh;
+        height: 300vh;
         background-color: $light;
     }
 
     @include desktop {
-        height: 200vh;
+        height: 300vh;
+    }
+
+    @include large {
+        height: 150vh;
+        flex-direction: row;
+        width: 85%;
+        justify-content: space-between;
+        margin: 2vh auto;
     }
 }

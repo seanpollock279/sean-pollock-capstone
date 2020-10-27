@@ -19,22 +19,23 @@ function Uploader (props) {
                     <input className="uploader__input" onChange={props.onChange} value={props.newLocation.city} name="city" type="text" placeholder="City"/>
                     <label className="uploader__label" htmlFor="">REGION</label>
                     <input className="uploader__input" onChange={props.onChange} value={props.newLocation.region} name="region" type="text" placeholder="Province"/>
-                    <label className="uploader__label" htmlFor="">CATEGORIES</label>
+                    <label className="uploader__label" htmlFor="">TYPES OF SHOOTS</label>
+                    <input className="uploader__input" onChange={props.onChange} value={props.newLocation.categories} name="categories" type="text" placeholder="Shoots"/>
 
-                    <div className="catContainer">
+                    {/* <div className="catContainer">
                         <div className="uploader__check">
-                            <input type="checkbox" value="Portraits"/><p className="uploader__subLabel">Portraits</p>
+                            <input type="checkbox" name="portraits" value="Portraits"/><p className="uploader__subLabel">Portraits</p>
                         </div>
                         <div className="uploader__check">
-                            <input type="checkbox" value="Weddings"/><p className="uploader__subLabel">Weddings</p>
+                            <input type="checkbox" name="weddings" value="Weddings"/><p className="uploader__subLabel">Weddings</p>
                         </div>
                         <div className="uploader__check">
-                            <input type="checkbox" value="Engagements"/><p className="uploader__subLabel">Engagements</p>
+                            <input type="checkbox" name="engagements" value="Engagements"/><p className="uploader__subLabel">Engagements</p>
                         </div>
                         <div className="uploader__check">
-                            <input type="checkbox" value="Lifestyle"/><p className="uploader__subLabel">Lifestyle</p>
+                            <input type="checkbox" name="lifestyle" value="Lifestyle"/><p className="uploader__subLabel">Lifestyle</p>
                         </div>
-                    </div>
+                    </div> */}
                     
                         
                     

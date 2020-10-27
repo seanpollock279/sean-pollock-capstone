@@ -16,6 +16,7 @@ function MapPage (props) {
                     description={location.description}
                     img={location.img}
                     id={location.id}
+                    key={location.id}
                     />
                 )}
             </div>

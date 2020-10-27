@@ -1,12 +1,13 @@
 import React from 'react';
+import './categories.scss';
 
 function Categories (props) {
+    // console.log(props)
     return (
         <div>
             {props.cat.map(item => {
-                <p>{item}</p>
+               return <p className="categoryItem">{item}</p>
             })}
-            <p>{props.cat}</p>
         </div>
     )
 }

@@ -1,9 +1,5 @@
 @import '../../Styles/global.scss';
 
-.background {
-    // background-color: $light;
-}
-
 .locationCard {
     width: 85%;
     display: flex;
@@ -11,30 +7,30 @@
     margin: 3vh auto;
 
     @include tablet {
-        width: 40%;
+        width: 45%;
         margin: 2vh 0 0 0;
+    }
+
+    @include large {
+        width: 30%;
     }
 
     &__top {
         height: 50vh;
         object-fit: contain;
-        // background-color: red;
         border-radius: 5px 5px 0 0;
     }
 
     &__img {
         max-width: 100%;
         border-radius: 5px 5px 0 0;
-        // max-height: 100%;
     }
 
     &__bottom {
-        // height: 25vh;
         background-color: $gray;
         border-radius: 0 0 5px 5px;
 
         @include tablet {
-            // height: 20vh;
         }
     }
 
@@ -46,6 +42,10 @@
 
         @include tablet {
             padding-left: 3vw;
+        }
+
+        @include large {
+            padding-left: 2vw;
         }
     }
 
@@ -59,6 +59,15 @@
         @include tablet {
             padding-left: 3vw;
             font-size: 0.85rem;
+        }
+
+        @include desktop {
+            width: 80%;
+        }
+
+        @include large {
+            padding-left: 2vw;
+            width: 80%;
         }
     }
 
@@ -80,6 +89,15 @@
             margin-left: 9vw;
             margin-top: 1vh;
             margin-bottom: 4vh;
+        }
+
+        @include desktop {
+            margin-left: 22vw;
+        }
+
+        @include large {
+            width: 10vw;
+            margin-left: 13vw;
         }
     }
 }

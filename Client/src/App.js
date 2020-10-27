@@ -9,7 +9,6 @@ class App extends React.Component {
   state = {
     locations: [],
     newLocation: {
-
     }
   }
 
@@ -37,6 +36,7 @@ class App extends React.Component {
       img: this.state.newLocation.img,
       permit: this.state.newLocation.permit,
       morningLight: this.state.newLocation.morningLight,
+      categories: [this.state.newLocation.categories],
       id: uuidv4()
     }
     axios.post('/locations', newLocation)

@@ -19,12 +19,21 @@
             width: 15%;
             margin-left: 4vw;
         }
+
+        @include large {
+            width: 10%;
+            margin-left: 6vw;
+        }
     }
 
     &__rightContainer {
 
         @include tablet {
             width: 55vw;
+        }
+
+        @include large {
+            width: 40vw;
         }
         
     }
@@ -35,7 +44,7 @@
             display: flex;
             align-items: center;
             justify-content: space-around;
-            margin-right: 4vw;
+            margin-right: 6vw;
         }
     }
 
@@ -52,6 +61,10 @@
 
         @include desktop {
             font-size: 1.5rem;
+        }
+
+        @include large {
+            font-size: 1.25rem;
         }
     }
 
@@ -80,6 +93,12 @@
 
         @include desktop {
             font-size: 1.5rem;
+        }
+
+        @include large {
+            height: 40px;
+            font-size: 1.25rem;
+            width: 14vw;
         }
     }
 }
