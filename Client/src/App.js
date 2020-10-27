@@ -43,7 +43,6 @@ class App extends React.Component {
     .then(res => {
       this.setState({locations: res.data.locations})
       this.props.history.push('/locations')
-      window.location.reload();
     })
     console.log(newLocation)
   }

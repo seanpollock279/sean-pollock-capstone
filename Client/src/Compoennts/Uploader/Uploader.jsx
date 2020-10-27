@@ -10,9 +10,9 @@ function Uploader (props) {
                 <h1 className="uploader__title">Upload New Location</h1>
                 <form className="uploader__form" action="">
                     <label className="uploader__label" htmlFor="">NAME OF LOCATION</label>
-                    <input className="uploader__input" onChange={props.onChange} value={props.newLocation.location} name="location" type="text"/>
+                    <input className="uploader__input" onChange={props.onChange} value={props.newLocation.location} name="location" type="text" placeholder="Location"/>
                     <label className="uploader__label" id="description" htmlFor="">DESCRIPTION OF LOCATION</label>
-                    <textarea className="uploader__inputTwo" onChange={props.onChange} value={props.newLocation.description} type="text" name="description"  cols="30" rows="10"></textarea>
+                    <textarea className="uploader__inputTwo" onChange={props.onChange} value={props.newLocation.description} type="text" name="description" placeholder="Description"  cols="30" rows="10"></textarea>
                     <label className="uploader__label" htmlFor="">LOCATION ADDRESS</label>
                     <input className="uploader__input" onChange={props.onChange} value={props.newLocation.address} name="address" type="text" placeholder="Street # and Street Name"/>
                     <label className="uploader__label" htmlFor="">CITY</label>
@@ -59,7 +59,7 @@ function Uploader (props) {
                         
 
                     <label className="uploader__label" htmlFor="">IMAGE OF LOCATION</label>
-                    <input className="uploader__input" onChange={props.onChange} value={props.newLocation.img} name="img" type="text" placeholder="Enter link to image" />
+                    <input className="uploader__input" onChange={props.onChange} value={props.newLocation.img} name="img" type="text" placeholder="Enter link of image" />
                     <button className="uploader__btn" onClick={props.addLocation}>UPLOAD</button>
                 </form>
                 <div className="uploader__foot">

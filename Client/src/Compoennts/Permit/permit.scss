@@ -2,4 +2,9 @@
 
 .permitIcon {
     width: 25px;
+    margin-left: 2vw;
+
+    @include desktop {
+        width: 50px;
+    }
 }

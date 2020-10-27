@@ -49,6 +49,10 @@
         @include tablet {
             margin: 0;
         }
+
+        @include desktop {
+            font-size: 1.5rem;
+        }
     }
 
     &__link {
@@ -72,6 +76,10 @@
             height: 4vh;
             font-size: 1rem;
             margin: 0;
+        }
+
+        @include desktop {
+            font-size: 1.5rem;
         }
     }
 }
