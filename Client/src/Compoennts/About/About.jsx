@@ -16,7 +16,7 @@ function About () {
             <div className="aboutInfo">
                 <img className="aboutInfo__profile" src={Profile} alt="photo of author"/>
                 <h2 className="aboutInfo__title">Sean Pollock</h2>
-                <p className="aboutInfo__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis magni in sapiente doloribus odio ipsum pariatur sunt ducimus! Iure odit itaque et asperiores tempore aliquid vero officiis laboriosam unde aperiam.Necessitatibus provident libero doloremque deleniti unde possimus consequuntur maxime explicabo perferendis error corrupti accusamus commodi, enim delectus nisi fuga dolorem ut adipisci voluptatum veniam accusantium dolore similique facere cupiditate. Minima?</p>
+                <p className="aboutInfo__description">I'm a photographer turned web developer from Toronto, Ontario. My hope is that this app helps photographers find a location for their next shoot and encourages them to seek out new locations to share with their peers.</p>
             </div>
             <h3 className="aboutInfo__subTitle">App developed with:</h3>
             <div className="aboutInfo__tools">

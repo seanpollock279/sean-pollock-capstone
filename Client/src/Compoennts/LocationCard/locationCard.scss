@@ -59,6 +59,7 @@
         @include tablet {
             padding-left: 3vw;
             font-size: 0.85rem;
+            width: 80%;
         }
 
         @include desktop {
@@ -86,7 +87,7 @@
         @include tablet {
             height: 4vh;
             width: 20vw;
-            margin-left: 9vw;
+            margin-left: 20vw;
             margin-top: 1vh;
             margin-bottom: 4vh;
         }

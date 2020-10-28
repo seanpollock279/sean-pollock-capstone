@@ -110,6 +110,12 @@
         border: 1px solid $dark;
         color: $light;
         margin-bottom: 3vh;
+
+        @include tablet {
+            width: 30vw;
+            height: 5vw;
+            font-size: 1.25rem;
+        }
     }
 }
 
