@@ -1,0 +1,28 @@
+@import '../../Styles/global.scss';
+
+.header {
+    background-color: $main;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include tablet {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        width: 85%;
+
+        @include tablet {
+            width: 15%;
+            margin-left: 4vw;
+        }
+
+        @include large {
+            width: 10%;
+            margin-left: 6vw;
+        }
+    }
+}
