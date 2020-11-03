@@ -7,8 +7,7 @@ import SignInHeader from '../SignInHeader/SignInHeader';
 export default function SignUp() {
     const emailRef = useRef();
     const passwordRef = useRef();
-    const passwordConfirmRef = useRef();
-    // const { signUp, currentUser } = useAuth();
+    // const { logIn, currentUser } = useAuth();
     const [error, setError] = useState('');
     const [loading, setLoading] = useState(false);
     const history = useHistory();
@@ -46,14 +45,10 @@ export default function SignUp() {
                     <label className="signUp__label" htmlFor="">Password</label>
                     <input className="signUp__input" type="password" ref={passwordRef} required></input>
                 </div>
-                <div className="signUp__group">
-                    <label className="signUp__label" htmlFor="">Password Confirmation</label>
-                    <input className="signUp__input" type="password" ref={passwordConfirmRef} required></input>
-                </div>
-                <button className="signUp__btn">Sign Up</button>
+                <button className="signUp__btn">Log In</button>
             </form>
             <div className="signUp__footer">
-                <h6 className="signUp__footerText">Already have an account? <Link className="signUp__link" to="/login">Log In</Link></h6> 
+                <h6 className="signUp__footerText">Need an account? <Link className="signUp__link" to="/login">Sign Up</Link></h6> 
             </div>
         </div>
         </>
