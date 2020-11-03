@@ -1,0 +1,123 @@
+@import '../../Styles/global.scss';
+
+.uploader {
+
+    &__title {
+        font-family: "Inter";
+        font-size: 1.25rem;
+        color: $dark;
+        font-weight: 400;
+        text-align: center;
+
+        @include tablet {
+            font-size: 1.75rem;
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    &__label {
+        font-family: "Inter";
+        font-size: 0.75rem;
+        text-align: center;
+        font-weight: 400;
+        color: $dark;
+        margin: 1vh 0 1vh 0;
+
+        @include tablet {
+            font-size: 1rem;
+        }
+    }
+
+    &__input {
+        width: 60%;
+        margin: 0 auto;
+        border: 2px solid $main;
+        border-radius: 5px;
+        height: 3vh;
+    }
+
+    &__inputTwo {
+        width: 60%;
+        margin: 0 auto;
+        border: 2px solid $main;
+        border-radius: 5px;
+        height: 15vh;
+    }
+
+    &__subLabel {
+        font-family: "Inter";
+        font-size: 0.75rem;
+        font-weight: 300;
+        width: 30%;
+
+        @include tablet {
+            font-size: 1rem;
+        }
+    }
+
+    &__checkGroup {
+        flex-wrap: wrap;
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-around;
+    }
+
+    &__check {
+        display: flex;
+        align-items: center;
+        width: 30%;
+        margin: 0 auto;
+    }
+
+    &__btn {
+        font-family: 'Inter';
+        font-weight: 700;
+        height: 10vw;
+        width: 40vw;
+        border-radius: 5px;
+        background-color: $main;
+        border: 1px solid $main;
+        color: $gray;
+        margin: 2vh auto;
+
+        @include tablet {
+            height: 5vh;
+            width: 25vw;
+        }
+    }
+
+    &__foot {
+        margin-top: 5vh;
+        height: 10vh;
+    }
+}
+
+.lightCheck {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8vw;
+    width: 85%;
+
+    @include tablet {
+        width: 50%;
+        margin-left: 25vw;
+
+    }
+}
+
+.catContainer {
+
+    @include tablet {
+        display: flex;
+        width: 60%;
+        margin: 0 auto;
+    }
+    
+}

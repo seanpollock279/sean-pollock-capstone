@@ -15,12 +15,29 @@ app.get('/locations', (req, res) => {
     res.send(data)
 })
 
-app.get('/location/:name', (req, res) => {
-    res.send(data)
+app.get('/locations/:id', (req, res) => {
+    const selected = data.locations.find(item => item.id === req.params.id)
+    console.log(selected)
+    res.json({
+        location: selected.location,
+        id: selected.id,
+        description: selected.description,
+        morningLight: selected.morningLight,
+        eveningLight: selected.eveningLight,
+        address: selected.address,
+        city: selected.city,
+        region: selected.region,
+        longtitude: selected.longitude,
+        latitude: selected.latitude,
+        categories: selected.categories,
+        permit: selected.permit,
+        washrooms: selected.washrooms,
+        img: selected.img
+    })
 })
 
-app.post('location', (req, res) => {
-    const { id, location, description, morningLight, eveningLight, address, city, region, longitude, latitude, categories, permit } = req.body
+app.post('/locations', (req, res) => {
+    const { id, location, description, morningLight, eveningLight, address, city, region, longitude, latitude, categories, permit, img } = req.body
     const newLocation = {
         id,
         location, 
@@ -33,13 +50,14 @@ app.post('location', (req, res) => {
         longitude,
         latitude,
         categories,
-        permit
+        permit,
+        img
     }
     res.json([
-        db.locations,
+        data.locations,
         newLocation
     ])
-    db.locations.push(newLocations);
+    data.locations.push(newLocation);
 })
 
 app.listen(port, () => console.log(`We're live on port, ${port}`))

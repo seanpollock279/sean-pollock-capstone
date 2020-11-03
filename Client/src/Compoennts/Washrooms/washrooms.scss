@@ -1,0 +1,10 @@
+@import '../../Styles/global.scss';
+
+.washroomIcon {
+    width: 25px;
+    margin-left: 2vw;
+
+    @include desktop {
+        width: 50px;
+    }
+}

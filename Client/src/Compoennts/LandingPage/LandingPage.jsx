@@ -17,7 +17,7 @@ function LandingPage () {
                     <button className="landing__searchBtn">Seach</button>
                 </div>
                 <div className="landing__bottomContainer">
-                    <h2 className="landing__quickMenu">Quick Search</h2>
+                    <h2 className="landing__quickMenu">Quick Glance</h2>
                     <Link to="/locations"><button className="landing__optionBtn">Toronto</button></Link>
                     <button className="landing__optionBtn">Montreal</button>
                     <button className="landing__optionBtn">Calgary</button>
