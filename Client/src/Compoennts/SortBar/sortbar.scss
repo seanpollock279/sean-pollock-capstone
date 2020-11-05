@@ -1,0 +1,27 @@
+@import '../../Styles/global.scss';
+
+.infoBar {
+
+    display: flex;
+    justify-content: center;
+    background-color: $gray;
+    align-items: center;
+    width: 85%;
+    margin: 2vh auto;
+    border-radius: 5px;
+
+    &__title {
+        font-family: "Inter";
+        font-weight: 400;
+        color: $dark;
+    }
+
+    &__select {
+        font-family: "Inter";
+        background-color: $light;
+        height: 35px;
+        border: 1px solid $main;
+        border-radius: 5px;
+        margin-left: 2vw;
+    }
+}

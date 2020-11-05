@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { useAuth } from '../../Contexts/AuthContexts';
 import { Link, useHistory } from 'react-router-dom';
-import '../SignUp/signup.scss';
+import '../LogIn/login.scss';
 import SignInHeader from '../SignInHeader/SignInHeader';
 
 export default function SignUp() {
@@ -37,6 +37,7 @@ export default function SignUp() {
         <SignInHeader />
         <div className="signUp">
             <form className="signUp__form">
+            <h1 className="signUp__title">Log In</h1>
                 <div className="signUp__group">
                     <label className="signUp__label" htmlFor="">Email</label>
                     <input className="signUp__input" type="email" ref={emailRef} required></input>
@@ -48,7 +49,7 @@ export default function SignUp() {
                 <button className="signUp__btn">Log In</button>
             </form>
             <div className="signUp__footer">
-                <h6 className="signUp__footerText">Need an account? <Link className="signUp__link" to="/login">Sign Up</Link></h6> 
+                <h6 className="signUp__footerText">Need an account? <Link className="signUp__link" to="/signup">Sign Up</Link></h6> 
             </div>
         </div>
         </>

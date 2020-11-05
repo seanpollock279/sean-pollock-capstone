@@ -13,8 +13,8 @@ function LandingPage () {
                     <p className="landing__description">Looking for a spot for your next headshot session? Struggling to find a scenic location to photograph a bridal party?
                         Start here by searching by location, event or best time of day to shoot.
                     </p>
-                    <input className="landing__search" type="text"/>
-                    <button className="landing__searchBtn">Seach</button>
+                    {/* <input className="landing__search" type="text"/>
+                    <button className="landing__searchBtn">Seach</button> */}
                 </div>
                 <div className="landing__bottomContainer">
                     <h2 className="landing__quickMenu">Quick Glance</h2>

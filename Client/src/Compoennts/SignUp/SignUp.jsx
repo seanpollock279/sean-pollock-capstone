@@ -38,6 +38,7 @@ export default function SignUp() {
         <SignInHeader />
         <div className="signUp">
             <form className="signUp__form">
+            <h1 className="signUp__title">Sign Up</h1>
                 <div className="signUp__group">
                     <label className="signUp__label" htmlFor="">Email</label>
                     <input className="signUp__input" type="email" ref={emailRef} required></input>

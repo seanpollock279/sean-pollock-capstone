@@ -3,12 +3,14 @@ import LocationCard from '../LocationCard/LocationCard';
 import Header from '../Header/Header';
 import axios from 'axios';
 import './mapPage.scss';
+import SortBar from '../SortBar/SortBar';
 
 function MapPage (props) {
     let location = props.state.locations.locations;
     return (
         <>
             <Header />
+            <SortBar />
             <div className="Cards">
                 {location.map(location => 
                     <LocationCard 
