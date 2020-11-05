@@ -36,24 +36,25 @@ export default function SignUp() {
     return (
         <>
         <SignInHeader />
-        <div className="body">
-            <form>
-                <div>
-                    <label htmlFor="">Email</label>
-                    <input type="email" ref={emailRef} required></input>
+        <div className="signUp">
+            <form className="signUp__form">
+            <h1 className="signUp__title">Sign Up</h1>
+                <div className="signUp__group">
+                    <label className="signUp__label" htmlFor="">Email</label>
+                    <input className="signUp__input" type="email" ref={emailRef} required></input>
                 </div>
-                <div>
-                    <label htmlFor="">Password</label>
-                    <input type="password" ref={passwordRef} required></input>
+                <div className="signUp__group">
+                    <label className="signUp__label" htmlFor="">Password</label>
+                    <input className="signUp__input" type="password" ref={passwordRef} required></input>
                 </div>
-                <div>
-                    <label htmlFor="">Password Confirmation</label>
-                    <input type="password" ref={passwordConfirmRef} required></input>
+                <div className="signUp__group">
+                    <label className="signUp__label" htmlFor="">Password Confirmation</label>
+                    <input className="signUp__input" type="password" ref={passwordConfirmRef} required></input>
                 </div>
-                <button>Sign Up</button>
+                <button className="signUp__btn">Sign Up</button>
             </form>
-            <div>
-                Already have an account? <Link to="/login">Log In</Link>
+            <div className="signUp__footer">
+                <h6 className="signUp__footerText">Already have an account? <Link className="signUp__link" to="/login">Log In</Link></h6> 
             </div>
         </div>
         </>

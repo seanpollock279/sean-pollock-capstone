@@ -78,7 +78,7 @@
     &__quickMenu {
         font-family: "Inter";
         color: $dark;
-        font-weight: 400;
+        font-weight: 700;
         font-size: 1.5rem;
     }
 
@@ -126,4 +126,48 @@
     @include tablet {
         min-height: 30vw;
     }
+}
+
+.imgTest {
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    filter: gray; /* IE5+ */
+    -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+    -webkit-transition: all .8s ease-in-out;  
+
+    &__test {
+        width: 40vw;
+        border-radius: 5px 5px 0 0;
+    }
+
+    &__text {
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__optionBtn {
+        border-radius: 0 0 5px 5px;
+        font-family: 'Inter';
+        font-weight: 300;
+        height: 6vw;
+        width: 40vw;
+        background-color: $gray;
+        border: 1px solid $gray;
+        color: $dark;
+        margin-bottom: 3vh;
+    }
+}
+
+.imgTest:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
+    -webkit-transform: scale(1.01);
+}
+
+.locationLink {
+    text-decoration: none;
 }
