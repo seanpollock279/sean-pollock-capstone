@@ -1,0 +1,242 @@
+{ 
+    "locations" : [ {
+        "toronto" : [
+            {
+                "id": "1b3b5b7bhg3",
+                "location": "SunnySide Boardwalk",
+                "description": "A short boardwalk along the lake that is lined by beach one side and grass on the other. Large trees line the pathway as well.",
+                "morning light": true,
+                "evening light": true,
+                "address": "1755 Lake Shore Blvd W, Toronto, ON M6S 5A3",
+                "city": "Toronto",
+                "region": "Ontario",
+                "longitude": 43.637371,
+                "latitude": -79.457981,
+                "categories" : ["portraits", "lifestyle", "wedding", "engagements"],
+                "permit": true,
+                "washrooms": true,
+                "img": "https://i.imgur.com/j0t7nrS.jpg"
+            },
+            {
+                "id": "9g7f8d6a5ajd6",
+                "location": "High Park",
+                "description": "Large park on the west side of Toronto. This park has ponds, forests, cottages, gardens and open grass space.",
+                "morningLight": true,
+                "eveningLight": true,
+                "address": "1873 Bloor St W, Toronto, ON M6R 2Z3",
+                "city": "Toronto",
+                "region": "Ontario",
+                "longitude": -79.46369,
+                "latitude": 43.646548,
+                "categories": ["portraits", "wedding", "lifestyle", "engagements"],
+                "permit": true,
+                "washrooms": true,
+                "img": "https://i.imgur.com/qQcKsSU.jpg"
+            },
+            {
+                "id": "7dgdga5a22",
+                "location": "Spadina House",
+                "description": "Historic House and lavish gardens, lots of large trees, the house can be used as a backgrop with many varying walls. Small orchard out back.",
+                "morning light": true,
+                "evening light": true,
+                "address": "285 Spadina Road, Toronto, ON",
+                "city": "Toronto",
+                "region": "Ontario",
+                "longitude": 43.679023,
+                "latitude": 79.40815,
+                "categories": ["weddings", "portraits", "engagements", "lifestyle"],
+                "permit": true,
+                "washrooms": false,
+                "img": "https://i.imgur.com/f4rXsgC.jpg"
+            },
+            {
+                "id": "22klsoeodk",
+                "location": "Yorkville Camera Wall",
+                "description": "Outside wall of a building that is covered in security cameras.",
+                "morning light": true,
+                "evening light": false,
+                "address": "Scollard St, Toronto, ON M5R 0A1",
+                "city": "Toronto",
+                "region": "Ontario",
+                "longitude": 43.672057,
+                "latitude": -79.390262,
+                "categories": ["portraits", "lifestyle"],
+                "permit": false,
+                "washrooms": true,
+                "img":"https://i.imgur.com/kT0S45y.jpg"
+            },
+            {
+                "id": "ls456d7dsww2",
+                "location": "Sugar Beach",
+                "description": "Artificial beach with pink umbrellas and white beach chairs. A good view of the lake as well.",
+                "morning light": true,
+                "evening light": true,
+                "address": "25 Dockside Dr, Toronto, ON M5A 1B6",
+                "city": "Toronto",
+                "region": "Ontario",
+                "longitude": 43.643070,
+                "latitude": -79.367674,
+                "categories": ["portraits", "lifestyle"],
+                "permit": false,
+                "washrooms": true,
+                "img": "https://i.imgur.com/80Pf568.jpg"
+            },
+            {
+                "id": "394049sdzkjahs",
+                "location": "Woodbine Beach",
+                "description": "Very large beach with access to the water.",
+                "morning light": true,
+                "evening light": true,
+                "address": "1675 Lake Shore Blvd E, Toronto, ON M4L 3W6",
+                "city": "Toronto",
+                "region": "Ontario",
+                "longitude": 43.661714,
+                "latitude": -79.307878,
+                "categories": ["portraits", "lifestyle", "wedding", "engagement"],
+                "permit": false,
+                "washrooms": true,
+                "img": "https://i.imgur.com/gAskt9c.jpg"
+            } 
+        ]
+    },
+    {
+        "montreal" : [
+            {
+                "id": "354049sdrkjahjs",
+                "location": "Habitat 67",
+                "description": "The design is an experiment in modular architecture meant to imitate an organic growth, bringing together nature and geometric patterns.",
+                "morning light": true,
+                "evening light": true,
+                "address": "2600 Av Pierre-Dupuy, Montréal, QC H3C 3R6",
+                "city": "Montreal",
+                "region": "Quebec",
+                "longitude": 45.4998,
+                "latitude": -73.5437,
+                "categories": ["portraits", "lifestyle"],
+                "permit": true,
+                "washrooms": false,
+                "img": "https://i.imgur.com/0EQhQZd.jpg"
+            },
+            {
+                "id": "2i5ifffhg99",
+                "location": "Mount Royal",
+                "description": "The lookout atop Mount Royal is a must for many visitors, offering panoramic views of the city",
+                "morning light": true,
+                "evening light": true,
+                "address": "1196 Voie Camillien-Houde, Montréal, QC H3H 1A1",
+                "city": "Montreal",
+                "region": "Quebec",
+                "longitude": -73.587577,
+                "latitude": 45.503949,
+                "categories": ["weddings", "portraits", "engagements", "lifestyle"],
+                "permit": false,
+                "washrooms": true,
+                "img": "https://i.imgur.com/1Yv4pFL.jpg"
+            },
+            {
+                "id": "2525iririd33",
+                "location": "Palais des Congrès de Montréal",
+                "description": "The large facade in colored glass slats is the most famous aspect of the building's architecture.",
+                "morning light": true,
+                "evening light": true,
+                "address": "1001 Jean Paul Riopelle Pl, Montreal, QC H2Z 1H5",
+                "city": "Montreal",
+                "region": "Quebec",
+                "longitude": -73.5609689,
+                "latitude": 45.50386,
+                "categories": ["portraits"],
+                "permit": true,
+                "washrooms": true,
+                "img": "https://i.imgur.com/G0YZet8.jpg"
+            }  
+        ]
+    },
+    {
+        "calgary" : [
+            {
+                "id": "40295adsdssd",
+                "location": "The Peace Bridge",
+                "description": "Initially a controversial project, this architectural marvel brings in people from all corners of the city, providing easy access to downtown from the north side of the river.",
+                "morning light": true,
+                "evening light": true,
+                "address": "Peace Bridge, Calgary, AB",
+                "city": "Calgary",
+                "region": "Alberta",
+                "longitude": -114.07883,
+                "latitude": 51.05389,
+                "categories": ["portraits", "engagements", "lifestyle"],
+                "permit": false,
+                "washrooms": false,
+                "img": "https://i.imgur.com/BYSxJLi.jpg"
+            },
+            {
+                "id": "g4j2l344isdsd",
+                "location": "Calgary Central Library",
+                "description": "A photographers dream: gorgeous wood panelling, delicate angles and neverending patterns continuing for floors and floors at this new attraction. Maybe even sign out a book while you’re at it.",
+                "morning light": true,
+                "evening light": false,
+                "address": "800 3 St SE, Calgary, AB T2G 2E7",
+                "city": "Calgary",
+                "region": "Alberta",
+                "longitude": -114.193737692,
+                "latitude": 51.1294277611,
+                "categories": ["portraits"],
+                "permit": false,
+                "washrooms": true,
+                "img": "https://i.imgur.com/Zp977kH.jpg"
+            }
+        ]
+    },
+    {
+        "vancouver" : [
+            {
+                "id": "49g4mesa22",
+                "location": "Stanley Park",
+                "description": "The true heart of Vancouver, an emblem of the city's passion for nature and the importance of public outdoor spaces in city-dwelling lives, offering a variety of attractions and activities for visitors to enjoy year-round.",
+                "morning light": true,
+                "evening light": true,
+                "address": "Stanley Park Dr, Vancouver, BC, Canada",
+                "city": "Vancouver",
+                "region": "British Columbia",
+                "longitude": -123.139999,
+                "latitude": 49.299999,
+                "categories": ["weddings", "portraits", "engagements", "lifestyle"],
+                "permit": false,
+                "washrooms": true,
+                "img": "https://i.imgur.com/THB1EWx.jpg"
+            },
+            {
+                "id": "l210sbe455",
+                "location": "Capilano Suspension Bridge",
+                "description": "Spectacular views amongst the trees up high in the rainforest. ",
+                "morning light": true,
+                "evening light": true,
+                "address": "3735 Capilano Rd, North Vancouver, BC V7R 4J1",
+                "city": "Vancouver",
+                "region": "British Columbia",
+                "longitude": -123.06934,
+                "latitude": 49.31636,
+                "categories": ["portraits", "engagements", "lifestyle"],
+                "permit": true,
+                "washrooms": true,
+                "img": "https://i.imgur.com/3AZkSGC.jpg"
+            },
+            {
+                "id": "6s5a4q32222",
+                "location": "Grouse Mountain",
+                "description": "Rising 1,250 metres (4,100 feet) above Vancouver and just 15 minutes from the city’s downtown core, is the vast alpine playground of Grouse Mountain.",
+                "morning light": true,
+                "evening light": true,
+                "address": "6400 Nancy Greene Way, North Vancouver, BC V7R 4K9",
+                "city": "Vancouver",
+                "region": "British Columbia",
+                "longitude": -123.099487,
+                "latitude": 49.372289,
+                "categories": ["portraits", "engagements", "lifestyle"],
+                "permit": false,
+                "washrooms": true,
+                "img": "https://i.imgur.com/O1alKSL.jpg"
+            }  
+        ]
+    }]
+}

@@ -4,6 +4,7 @@ import axios from 'axios';
 import Router from './Compoennts/Router/Router';
 import {useHistory} from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
+import { AuthProvider } from './Contexts/AuthContexts' ;
 
 class App extends React.Component {
   state = {
@@ -57,15 +58,15 @@ class App extends React.Component {
   }
 
   componentDidUpdate(prevProps, prevState) {
-    this.updateState();
+    // this.updateState();
   }
 
   render() {
     
     return (
-      <>{this.state.locations.locations !== undefined && 
+      <AuthProvider>{this.state.locations.locations !== undefined && 
         <Router state={this.state} addProps={this.props} addLocation={this.addLocation} onChange={this.onChange} />
-      }</>
+      }</AuthProvider>
     )
   }
 }

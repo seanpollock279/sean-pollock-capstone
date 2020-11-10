@@ -7,6 +7,7 @@ import Washrooms from '../Washrooms/Washrooms';
 import Categories from '../Categories/Categories';
 import Light from '../Light/Light';
 import {Link} from 'react-router-dom';
+import Map from '../Map/Map';
 
 class Location extends React.Component {
     state = {
@@ -51,6 +52,7 @@ class Location extends React.Component {
                         <h4 className="location__label">Morning light: <Light morningLight={location.morningLight} eveningLight={location.eveningLight} /></h4>
                         <h4 className="location__label">Evening light: <Light morningLight={location.morningLight} eveningLight={location.eveningLight} /></h4>
                     </div>
+                <Map location={location}/>
                 <Link to="/locations"><button className="location__back">Back to Locations</button></Link>
                 </div>
             </div>

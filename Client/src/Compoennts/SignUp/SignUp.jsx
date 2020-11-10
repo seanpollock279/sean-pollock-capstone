@@ -8,36 +8,37 @@ export default function SignUp() {
     const emailRef = useRef();
     const passwordRef = useRef();
     const passwordConfirmRef = useRef();
-    // const { signUp, currentUser } = useAuth();
+    const { signUp, currentUser } = useAuth();
     const [error, setError] = useState('');
     const [loading, setLoading] = useState(false);
     const history = useHistory();
 
     async function handleSubmit(e) {
         e.preventDefault()
+        
+        if (passwordRef.current.value !== 
+        passwordConfirmRef.current.value) {
+            return setError('Passwords do not match');
+        }
 
-        // if (passwordRef.current.value !== 
-        // passwordConfirmRef.current.value) {
-        //     return setError('Passwords do not match');
-        // }
+        try {
+            console.log(emailRef.current.value)
+            await signUp(emailRef.current.value, passwordRef.current.value)
+            setError('')
+            setLoading(true)
+            history.push('/');
+        } catch {
+            setError("Failed to create an account")
+        } 
 
-        // try {
-        //     setError('')
-        //     setLoading(true)
-        //     await signUp(emailRef.current.value, passwordRef.current.value)
-        //     history.push('/');
-        // } catch {
-        //     setError("Failed to create an account")
-        // } 
-
-        // setLoading(false);
+        setLoading(false);
     }
 
     return (
         <>
         <SignInHeader />
         <div className="signUp">
-            <form className="signUp__form">
+            <form className="signUp__form" onSubmit={handleSubmit}>
             <h1 className="signUp__title">Sign Up</h1>
                 <div className="signUp__group">
                     <label className="signUp__label" htmlFor="">Email</label>

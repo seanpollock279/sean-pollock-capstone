@@ -37,7 +37,7 @@ export function AuthProvider({ children }) {
         return unsubscribe;
     }, [])
 
-    
+    console.log(children)
 
     const value = {
         currentUser,

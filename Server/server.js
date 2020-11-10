@@ -6,6 +6,7 @@ const data = require('./data.json');
 const cors = require('cors');
 
 require('dotenv').config();
+//process.
 
 app.use(cors());
 app.options('*', cors());
@@ -13,6 +14,31 @@ app.use(bodyParser.json());
 
 app.get('/locations', (req, res) => {
     res.send(data)
+})
+
+app.get('locations/:city', (req, res) => {
+    res.send(data)
+})
+
+app.get('locations/:city/:id', (req, res) => {
+    const selected = data.locations.find(item => item.id === req.params.id)
+    console.log(selected)
+    res.json({
+        location: selected.location,
+        id: selected.id,
+        description: selected.description,
+        morningLight: selected.morningLight,
+        eveningLight: selected.eveningLight,
+        address: selected.address,
+        city: selected.city,
+        region: selected.region,
+        longtitude: selected.longitude,
+        latitude: selected.latitude,
+        categories: selected.categories,
+        permit: selected.permit,
+        washrooms: selected.washrooms,
+        img: selected.img
+    })
 })
 
 app.get('/locations/:id', (req, res) => {

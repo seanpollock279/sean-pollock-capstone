@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import LandingPage from '../LandingPage/LandingPage';
 import MapPage from '../MapPage/MapPage';
@@ -7,6 +7,7 @@ import About from '../About/About';
 import Location from '../Location/Location';
 import SignUp from '../SignUp/SignUp';
 import LogIn from '../LogIn/LogIn';
+import { useAuth } from '../../Contexts/AuthContexts';
 
 function Router (props) {
     return (
