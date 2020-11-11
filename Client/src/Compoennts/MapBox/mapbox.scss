@@ -1,0 +1,14 @@
+@import '../../Styles/global.scss';
+
+.mapBox {
+    margin-bottom: 2vh;
+    // width: 85vw;
+
+    // @include tablet {
+    //     width: 85vw;
+    // }
+
+    &__map {
+        border-radius: 5px;
+    }
+}

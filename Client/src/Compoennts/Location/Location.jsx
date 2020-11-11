@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from '../Header/Header';
 import axios from 'axios';
 import './location.scss';
@@ -8,6 +8,8 @@ import Categories from '../Categories/Categories';
 import Light from '../Light/Light';
 import {Link} from 'react-router-dom';
 import Map from '../Map/Map';
+import MapBox from '../MapBox/MapBox';
+import ReactMapGL from 'react-map-gl';
 
 class Location extends React.Component {
     state = {
@@ -27,11 +29,9 @@ class Location extends React.Component {
 
     componentDidMount() {
         this.getLocation();
-        console.log("hi")
     }
 
     render() {
-        // console.log(this.state)
         let location = this.state.location;
         return (
             <div>
@@ -52,7 +52,7 @@ class Location extends React.Component {
                         <h4 className="location__label">Morning light: <Light morningLight={location.morningLight} eveningLight={location.eveningLight} /></h4>
                         <h4 className="location__label">Evening light: <Light morningLight={location.morningLight} eveningLight={location.eveningLight} /></h4>
                     </div>
-                <Map location={location}/>
+                <MapBox location={this.state.location} longitude={this.state.location.longtitude} latitude={this.state.location.latitude}/>
                 <Link to="/locations"><button className="location__back">Back to Locations</button></Link>
                 </div>
             </div>

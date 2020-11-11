@@ -6,7 +6,6 @@ const data = require('./data.json');
 const cors = require('cors');
 
 require('dotenv').config();
-//process.
 
 app.use(cors());
 app.options('*', cors());
@@ -16,7 +15,7 @@ app.get('/locations', (req, res) => {
     res.send(data)
 })
 
-app.get('locations/:city', (req, res) => {
+app.get('/locations/toronto', (req, res) => {
     res.send(data)
 })
 

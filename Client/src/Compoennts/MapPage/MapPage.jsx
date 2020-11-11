@@ -12,12 +12,24 @@ function MapPage (props) {
     const [sorted, setSorted] = useState();
 
     const [portraitList, setPortraitList] = useState();
+
+    
+
+    
     const sortPortraits = (event) => {
-        console.log('fired')
+        
         if (props.state.locations !== undefined) {
-            let newPortraitList = props.state.locations.filter(props.state.locations.categories.find('portraits'))
+            let newPortraitList = props.state.locations.locations.map(item => {
+                console.log(item.categories)
+                item.categories.map(cat => { 
+                })
+                return newPortraitList;
+            })
+            console.log(newPortraitList)
+            // let newPortraitList = props.state.locations.locations.categories.filter(item => item === 'portraits')
             setPortraitList(newPortraitList);
             setSorted('portraits');
+            
         }
     }
 
@@ -56,7 +68,7 @@ function MapPage (props) {
             <Header />
             <SortBar sortPortraits={sortPortraits} sortEngagements={sortEngagements} sortLifestyle={sortLifestyle} sortWeddings={sortWeddings}/>
             <div className="Cards">
-                {/* {location.map(location => 
+                {location.map(location => 
                     <LocationCard 
                     location={location.location}
                     description={location.description}
@@ -64,9 +76,10 @@ function MapPage (props) {
                     id={location.id}
                     key={location.id}
                     />
-                )} */}
+                )}
+            </div>
             
-                {sorted === 'portraits' ? portraitList.map(item => 
+                {/* {sorted === 'portraits' ? portraitList.map(item => 
                 <LocationCard 
                 location={item.location}
                 description={item.description}
@@ -100,7 +113,7 @@ function MapPage (props) {
                     />
                 )}
             </div>
-            <LocationFoot />
+            <LocationFoot /> */}
         </>
     )
 }
